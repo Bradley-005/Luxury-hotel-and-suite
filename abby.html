@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DateMate – Find Your Match</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background: #f9f9f9;
+            padding: 30px;
+        }
+        .form {
+            background: #fff;
+            max-width: 500px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        input, select, textarea {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            margin-top: 15px;
+            padding: 12px;
+            width: 100%;
+            background-color: #e91e63;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        } 
+        @media screen {
+            #form {
+            background: blueviolet;
+           
+            margin: auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            width: 1000px;
+            height: 1000px;
+            font-size: 50px;
+        }
+        #gender{
+            font-size: 50px;
+            width: 100%;
+            
+        }
+        #button{
+            font-size: 50px;
+        }
+        h2{
+            font-size: 80px;
+        }
+        #submit{
+            font-size: 70px;
+        }
+        #name{
+            width: 75%;
+            height: 50px;
+        }
+        #age{
+            width: 75%;
+            height: 50px;
+            margin-top: 50px;
+        }
+        #bio{
+            font-size: 75px;
+        }
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align:center;">💖 Join DateMate</h2>
+
+    <form id="form" action="submit.php" method="POST" enctype="multipart/form-data">
+        <label>Name:</label>
+        <input id="name" type="text" name="name" required>
+
+        <label>Age:</label>
+        <input id="age" type="number" name="age" min="18" required>
+
+        <label>Gender:</label>
+        <select id="gender" name="gender" required>
+            <option  value="">--Select--</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Non-binary</option>
+        </select>
+
+        <label>Bio:</label>
+        <textarea id="bio" name="bio" placeholder="Tell us something fun about you!" required></textarea>
+
+        <label>Profile Picture:</label>
+        <input id="button" type="file" name="photo" accept="image/*" required>
+
+        <button id="submit" type="submit">Create Profile</button>
+    </form>
+
+</body>
+</html>

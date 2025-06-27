@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hotel Room Booking</title>
+  <style>
+    .site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #1f0066;
+  color: #fff;
+  font-size: 20px;
+}
+.main-nav a {
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.booking-header {
+  font-family: 'Georgia', serif;
+  color: #004466;
+  background-color: #f0f8ff;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #004466;
+  border-radius: 8px;
+  margin: 20px auto;
+  width: 80%;
+}
+
+.booking-header marquee {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+   
+    body {
+      font-family: sans-serif;
+      margin: 20px;
+      background-color: aqua;
+    }
+
+    .room-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      border-radius: 10px;
+      background-color: antiquewhite;
+    }
+
+    .room-block {
+      width: 250px;
+      border: 10px solid green;
+      padding: 10px;
+      text-align: center;
+      border-radius: 30px;
+    }
+    .btn-book{
+      font-size: 30px;
+    }
+
+    .room-image {
+      width: 100%;
+      height: auto;
+    }
+
+    .booking-form {
+      display: none;
+      margin-top: 10px;
+      text-align: left;
+    }
+
+    .booking-form input[type="text"],
+    .booking-form input[type="email"],
+    .booking-form textarea {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+    }
+
+    .booking-form input[type="submit"] {
+      margin-top: 10px;
+    }
+
+    button {
+      margin-top: 10px;
+    }
+  @media screen {
+     .site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background: #1f0066;
+  color: #fff;
+  font-size: 30px;
+}
+
+h2{
+  font-size: 50px;
+}
+h3{
+  font-size: 13px;
+}
+
+.logo {
+  font-size: 50px;
+  font-weight: bold;
+}
+.room-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      border-radius: 10px;
+      background-color: antiquewhite;
+    }
+
+    .room-block {
+      width: 100%;
+      border: 10px solid green;
+      padding: 10px;
+      text-align: center;
+      border-radius: 30px;
+    }
+    .btn-book{
+      font-size: 30px;
+    }
+
+    .room-image {
+      width: 80%;
+      height: auto;
+    }
+
+    .room-container {
+      display: block;
+      margin-top: 10px;
+      text-align: left;
+      font-size: 100px;
+      width:  100%;
+    }
+
+    .booking-form input[type="text"],
+    .booking-form input[type="email"],
+    .booking-form textarea {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+    }
+
+    .booking-form input[type="submit"] {
+      margin-top: 10px;
+    }
+
+    
+  }
+  </style>
+</header>
+<body>
+  <header class="site-header">
+  <div class="logo">Luxury suites</div>
+  
+<nav class="main-nav">
+  <a href="brad.html">Home</a>
+    <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="abby.html">Dating section</a>
+</nav>
+
+
+
+  <a href="#booking" style="background:#ffcc00;color:#000;padding:10px 15px;border-radius:5px;text-decoration:none;">
+    Book Now
+  </a>
+    </header> 
+</header>
+
+
+<h2><marquee><i><u>Book Your Stay</u></marquee></h2>
+<h3><i>Your unforgettable stay is just a few clicks away  choose your room, reserve your space, and let relaxation begin.</i></h3>
+
+    
+<div class="room-container">
+  <div class="room-block">
+    <img src="/images.1/room1.jpg" class="room-image" alt="Room 1">
+    <button style="font-size: 100px;" class="btn-book"this.nextElementSibling.style.display='block'>Book Now</button>
+    <form class="booking-form" method="POST" action="room.php">
+      <label>Full Name:</label>
+      <input type="text" name="fullname" required>
+      <label>Email:</label>
+      <input type="email" name="email" required>
+      <label>Phone Number:</label>
+      <input type="text" name="phone" required>
+      <label>Address:</label>
+      <textarea name="address" required></textarea>
+      <input type="submit" name="submit" value="Book Room">
+    </form>
+  </div>
+
+  
+</div>
+
+<footer style="background:#222;color:#fff;padding:30px 20px;text-align:center">
+  <div>
+    <h3>LUXURY SUITES</h3>
+    <p>Jerusalem, Eldoret, Kenya</p>
+    <p>Phone: +254 712 345 678 | Email: bradleykibet007@gmail.com.ke</p>
+
+    <div style="margin:10px 0">
+      <a href="#" style="color:#fff; margin:0 10px;">Rooms</a>
+      <a href="#" style="color:#fff; margin:0 10px;">About</a>
+      <a href="#" style="color:#fff; margin:0 10px;">FAQs</a>
+      <a href="#" style="color:#fff; margin:0 10px;">Contact</a>
+    </div>
+
+    <div style="margin:10px 0">
+    </div>
+
+    <p style="font-size:14px;">&copy; <span id="year"></span> Luxury Suites. All rights reserved.</p>
+    <p style="font-size:12px;"><a href="#" style="color:#aaa;">Privacy Policy</a> | <a href="#" style="color:#aaa;">Terms & Conditions</a></p>
+  </div>
+
+  <script>
+    // Automatically update the copyright year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</footer>
+
+
+</body>
+</html>
